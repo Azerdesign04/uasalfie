@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("banner2.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-brown">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-brown">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-brown">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-brown">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-brown">ORDER</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag w3-brown">Buka dari 09.00 - 22.00 WIB</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Dapoer<br>Nusantara</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag w3-brown">Jalan Embun Pagi No.15</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide w3-brown">TENTANG KAMI</span></h5>
+    <p>Dapoer Nusantara – Rasa Asli, Dari Hati</p>
+<p>Di Dapoer Nusantara, kami percaya bahwa setiap masakan adalah cerita. Cerita tentang rumah, tentang ibu, tentang warisan rasa yang tak lekang oleh waktu. Kami hadir untuk menghidangkan cita rasa otentik dari berbagai penjuru Indonesia — dari rendang Minang yang kaya rempah, hingga gudeg Jogja yang manis dan lembut.
+
+Dengan bahan-bahan segar pilihan dan resep turun-temurun, setiap sajian kami diracik dengan cinta dan kehangatan dapur rumah. Di sini, Anda tidak hanya menikmati makanan, tetapi juga merasakan suasana, kenangan, dan kekayaan budaya nusantara dalam setiap suapan.
+
+Mari duduk bersama. Nikmati Indonesia, satu piring demi satu.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>""Dapoer Nusantara bukan sekadar restoran—ini adalah perjalanan rasa ke seluruh pelosok Indonesia. Teknik memasaknya sederhana, tapi rasa dan presentasinya luar biasa autentik. Sebuah persembahan tulus untuk warisan kuliner nusantara."</i></p>
+      <p>Chef Arya Ramadhan, Juri Taste of the Archipelago</p>
+    </div>
+    <img src="banner1.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Jam Buka:</strong> Setiap hari pukul 09.00 - 22.00 WIB</p>
+    <p><strong>Address:</strong> Jalan Embun Pagi No.15</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-brown">MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Makanan</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Minuman</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Nasi Liwet Solo</h5>
+      <p class="w3-text-grey">Nasi gurih dengan ayam suwir, telur pindang, dan sambal goreng khas Solo. Rp38.000</p><br>
+    
+      <h5>Rendang Daging Minang</h5>
+      <p class="w3-text-grey">Daging sapi empuk berbumbu rempah khas Sumatera Barat. Rp52.000</p><br>
+    
+      <h5>Sate Maranggi Cianjur</h5>
+      <p class="w3-text-grey">Daging sapi bakar manis-pedas dengan sambal oncom dan nasi hangat. Rp45.000</p><br>
+    
+      <h5>Gado-Gado Jakarta</h5>
+      <p class="w3-text-grey">Sayur rebus, lontong, tahu tempe, disiram saus kacang. Rp32.000</p><br>
+    
+      <h5>Ikan Bakar Jimbaran</h5>
+      <p class="w3-text-grey">Ikan laut bakar bumbu Bali + sambal matah dan plecing kangkung. Rp58.000</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Es Cendol Klasik</h5>
+      <p class="w3-text-grey">Cendol, santan, dan gula merah cair disajikan dingin. Rp18.000</p><br>
+    
+      <h5>Wedang Jahe Rempah</h5>
+      <p class="w3-text-grey">Jahe, kayu manis, dan serai untuk hangatkan tubuh. Rp15.000</p><br>
+    
+      <h5>Es Jeruk Pontianak</h5>
+      <p class="w3-text-grey">Jeruk segar diperas langsung, manis alami. Rp16.000</p><br>
+    
+      <h5>Teh Tarik Nusantara</h5>
+      <p class="w3-text-grey">Teh hitam kental dengan busa lembut. Rp17.000</p><br>
+    
+      <h5>Kopi Tubruk Flores</h5>
+      <p class="w3-text-grey">Kopi hitam khas Flores, pekat dan aromatik. Rp20.000</p>
+    </div>  
+    <img src="banner3.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-brown">CARA PESAN</span></h5>
+    <p>Mau menikmati cita rasa nusantara dari rumah atau kantor? Gampang banget!</p>
+    <p><span class="w3-tag w3-brown">Ikuti langkah mudah berikut ini:</span>
+    <p><strong>1. Pilih Menu Favoritmu</strong></p>
+    <p>Buka halaman Menu kami dan pilih makanan & minuman yang ingin kamu nikmati. Jangan lupa cek rekomendasi spesial hari ini!</p>
+    <p><strong>2. Pesan Melalui:</strong></p>
+    <p>WhatsApp: [0812-3456-7890]</p>
+    <p>Aplikasi Ojol: Cari Dapoer Nusantara di GoFood / GrabFood</p>
+    <p>Website: www.dapoernusantara.id</p>
+    <p><strong>Untuk reservasi</strong> tanyakan menu spesial hari ini atau kirimkan pesan kepada kami:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama" required name="Nama"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Berapa orang" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Tanggal dan Waktu" required name="date" value="2025-04-25T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Pesan / persyaratan khusus" required name="Message"></p>
+      <p><button class="w3-button w3-brown" type="submit">KIRIM PESAN</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
